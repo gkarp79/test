@@ -11,7 +11,7 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
       var html = [];
-         $.getJSON('https://storageaccountkb1.blob.core.windows.net/test/agencydb.json?sp=r&st=2021-05-10T15:06:54Z&se=2021-05-10T23:06:54Z&spr=https&sv=2020-02-10&sr=b&sig=%2B2msAyroDDkp4PaADEgHp1B76xPKmLaatenXl1CQi5A%3D', function (data) {
+         $.getJSON('https://storageaccountkb1.blob.core.windows.net/test/agencydb.json', function (data) {
             $.each(data, function (i,item) { // 업로드한 json 파일에서 총 8개의 자료를 불러온다.
                html.push(Number(item.latitude)); // 위도
                html.push(Number(item.longitude)); // 경도
