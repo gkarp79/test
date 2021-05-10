@@ -12,7 +12,7 @@
         <script>
       var html = [];
         
-         $.getJSON('https://storageaccountkb1.blob.core.windows.net/test/agencydb.json', function (data) {
+         $.getJSON('F:\agencydb.json', function (data) {
         
             $.each(data, function (i,item) { // 업로드한 json 파일에서 총 8개의 자료를 불러온다.
                html.push(Number(item.latitude)); // 위도
